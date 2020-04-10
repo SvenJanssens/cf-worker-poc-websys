@@ -9,3 +9,4 @@ To generate the required files for a Cloudflare worker, the excellent [template]
 
 - The example at the wasm-bindgen website uses the websys::window() function to send out the request to the API. However, websys::Window context is not usable in a Cloudflare Worker (as there is no window). In this case the websys::Worker context should be used.
 - The GitHub API now requires for the calling logic to send a HTTP Header "UserAgent".
+- opts.mode(RequestMode::Cors); >>> This line had to be removed, because the mode setting of the request is not implemented by CloudFlare.
