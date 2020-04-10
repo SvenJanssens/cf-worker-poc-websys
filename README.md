@@ -2,7 +2,7 @@
 
 This proof-of-concept takes the [web-sys/fetch example](https://rustwasm.github.io/docs/wasm-bindgen/examples/fetch.html) at the wasm-bindgen website and adapts it so it can be used as a Cloudflare worker.
 
-To generate the required files for a Cloudflare worker, the excellent template for kick starting a Cloudflare worker project using
+To generate the required files for a Cloudflare worker, the excellent [template](https://github.com/cloudflare/rustwasm-worker-template) for kick starting a Cloudflare worker project using
 [`wasm-pack`](https://github.com/rustwasm/wasm-pack) was used.
 
 ## Findings
